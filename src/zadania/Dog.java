@@ -32,4 +32,12 @@ public class Dog {
     public void makeSound() {
         System.out.println("Woof!");
     }
+
+    public void makeSoundDependingOnAge() {
+        if (age < 5) {
+            System.out.println("WOOF!");
+        } else {
+            System.out.println("woof");
+        }
+    }
 }
