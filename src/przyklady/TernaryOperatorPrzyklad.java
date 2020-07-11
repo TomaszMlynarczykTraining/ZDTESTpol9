@@ -12,8 +12,10 @@ public class TernaryOperatorPrzyklad {
 
         System.out.println(myString);
 
+        //tenrary operator, zapis skrocony instrukcji if
         myString = 5 > 1 ? "5 jest wieksze od 1" : "5 nie jest mniejsze od 1";
 
+        //zwykly zapis, wynik jest taki sam jak w operacji powyzej
         if (5 > 1) {
             myString = "5 jest wieksze od 1";
         } else {
