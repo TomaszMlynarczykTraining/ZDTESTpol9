@@ -14,6 +14,13 @@ public class CarMain {
         car.setSpeed(456);
         System.out.println("Predkosc samochodu " + car.getSpeed());
 
+
+        //instancje innej klasy dziedziczacej po Vehicle
+        Motorcycle motorcycle = new Motorcycle();
+        motorcycle.setNumberOfSeats(5);
+        motorcycle.setSpeed(245);
+        System.out.println(motorcycle.getNumberOfSeats());
+        System.out.println(motorcycle.getSpeed());
     }
 }
 
