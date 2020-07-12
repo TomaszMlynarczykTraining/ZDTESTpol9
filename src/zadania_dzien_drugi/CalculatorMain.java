@@ -9,8 +9,9 @@ public class CalculatorMain {
         //utworzenie i zastosowanie klasy kalkulator
 
         Calculator myCalculator = new Calculator();
-
-        myCalculator.myGreatMethod();
+        //uruchamianie metody z klasy którą wcześniej napisaliśmy
+        // i której stworzyliśmy nowy obiekt
+        myCalculator.run();
 
     }
 }
