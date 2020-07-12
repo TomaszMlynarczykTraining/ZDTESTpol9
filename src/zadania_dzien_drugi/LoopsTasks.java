@@ -34,5 +34,19 @@ public class LoopsTasks {
             System.out.println("Element tablicy " + i + " " + arrayOfGivenSize[i]);
         }
 
+
+        //zadanie drugie
+
+        String[] arrayOfNames = {"Jakub", "Małgorzata"};
+        String combinedNames = "";
+
+        //dla każdego imienia z tablicy imion, w każdej iteracji zmienna name przyjmie inną wartość
+        for (String name : arrayOfNames) {
+            combinedNames = combinedNames + "," + name;
+        }
+
+        System.out.println(combinedNames);
+
+
     }
 }
