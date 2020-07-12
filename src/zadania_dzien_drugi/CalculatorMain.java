@@ -13,5 +13,11 @@ public class CalculatorMain {
         // i której stworzyliśmy nowy obiekt
         myCalculator.run();
 
+        //możemy tutaj użyć nowej metody addTwoNumbers
+        long addResult = myCalculator.addTwoNumbers(4, 5);
+        long multiplyResult = myCalculator.multiplyTwoNumbers(4, 5);
+        System.out.println(addResult);
+        System.out.println(multiplyResult);
+
     }
 }

@@ -7,6 +7,11 @@ package zadania_dzien_drugi;
 import java.util.Scanner;
 
 //Przerób metodę run() tak, by przyjmowała dwie liczby z poziomu konsoli i wyświetlała je użytkownikowi.
+
+
+//2. Wróć do klasy Calculator – zaimplementuj metody na dodawanie, odejmowanie,
+//dzielenie i mnożenie, które jako argumenty przyjmą dwie liczby, a zwrócą wynik.
+
 public class Calculator {
 
     //metoda run() musi byc uruchamiana z poziomu metody main w innej klasie, bądź gdziekolwiek
@@ -21,5 +26,17 @@ public class Calculator {
         System.out.println("Pierwsza liczba to: " + firstNumberFromConsole);
         System.out.println("Druga liczba to: " + secondNumberFromConsole);
 
+    }
+
+    //metoda publiczna, przyjmuje dwa argumenty, i zwraca za pomocą return wyniki ich dodawania
+    public long addTwoNumbers(long firstNumber, long secondNumber) {
+        long result = firstNumber + secondNumber;
+        return result;
+    }
+
+    //metoda publiczna, przyjmuje dwa argumenty, i zwraca za pomocą return wyniki ich dodawania
+    public long multiplyTwoNumbers(long firstNumber, long secondNumber) {
+        long result = firstNumber * secondNumber;
+        return result;
     }
 }
