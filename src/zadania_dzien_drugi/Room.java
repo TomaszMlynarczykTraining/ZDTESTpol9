@@ -2,6 +2,7 @@ package zadania_dzien_drugi;
 
 
 //wygenerowanie konstruktora - prawy przycisk myszy ->generate -> constructor ->wybranie paraemtrów
+//generowanie getterów i setterów prawy przycisk myszy ->generate -> getter and setter
 public class Room {
 
     //parametry charakteryzujace klase, a.)
@@ -41,5 +42,13 @@ public class Room {
     //metoda wyswietlajaca powierzchnie uzywajaca innej metody z tej klasy
     public void showSurface() {
         System.out.println("Powierzchnia pokoju to:" + calculateSurface());
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
     }
 }

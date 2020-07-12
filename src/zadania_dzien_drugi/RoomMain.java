@@ -28,5 +28,10 @@ public class RoomMain {
             room.showSurface();
             room.showVolume();
         }
+
+        //wykorzystanie gettera i settera
+        livingRoom.setLength(42.3);
+
+        System.out.println("Dlugosc po zmianie to " + livingRoom.getLength());
     }
 }
