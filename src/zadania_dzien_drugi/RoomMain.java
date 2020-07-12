@@ -8,7 +8,25 @@ package zadania_dzien_drugi;
         d) Dodaj metody obliczające oraz zwracające pole powierzchni oraz objętość pokoju.
         e) Dodaj metody wyświetlające pole powierzchni oraz objętość pokoju.
         f) Z poziomu metody main zaprezentuj działanie poszczególnych metod.
-        g) Stwórz listę pokoi. Wyświetl ich parametry.*/
+        g) Stwórz tablicę obiektów typu pokój. Wyświetl ich parametry.*/
 
 public class RoomMain {
+
+    public static void main(String[] args) {
+
+        //tworzenie obiektu z konstruktora z podpunktu b.)
+        Room livingRoom = new Room(2.4, 3.5, 3.2);
+        //tworzenie obiektu z konstruktora z podpunktu C.)
+        Room kitchen = new Room(2.5, 2.2);
+
+        //tworzenie listy pokojów na podstawie utworzonego przez nas typu
+        Room[] listOfRooms = {livingRoom, kitchen};
+
+
+        //wywołanie metod dla każdego z pokojów
+        for (Room room : listOfRooms) {
+            room.showSurface();
+            room.showVolume();
+        }
+    }
 }
